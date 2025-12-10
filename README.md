@@ -20,7 +20,7 @@ The following packages are installed:
 3. Run the script - `sudo ./install.sh`.
 
 ## Using - Update Homepage
-1. Clone the repository in a directory of your choosing, if you have not already, usually the user home directory.
+1. Clone the repository in a directory of your choosing, if you have not already, usually the user home directory - `git clone https://github.com/jnbolsen/ezarr.git`.
 2. Make the scrip executable - `sudo chmod +x update.sh`.
 3. Run the script - `sudo ./update.sh`.
 
