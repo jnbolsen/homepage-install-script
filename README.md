@@ -45,8 +45,7 @@ Run the script.
 `/opt/homepage/config/`
 
 ## Tested Environments
-Ubuntu 22.04, 24.04, and 25.10
-
+Ubuntu 22.04, 24.04, and 25.10 <br />
 Debian 12 and 13
 
 ## Reference
