@@ -10,35 +10,51 @@ The following packages are installed:
 - pnpm
 - curl
 
-`sudo apt install curl node.js npm`
+```bash
+sudo apt install curl node.js npm
+```
 
-`sudo npm install -g pnpm`
+`bash
+sudo npm install -g pnpm
+```
 
 ## Usage - Install Homepage
 Download `install.sh`.
 
-`wget -O install.sh https://github.com/jnbolsen/homepage-scripts/blob/main/install.sh`
+```bash
+wget -O install.sh https://github.com/jnbolsen/homepage-scripts/blob/main/install.sh
+```
 
 Make the scrip executable.
 
-`sudo chmod +x install.sh`
+```bash
+sudo chmod +x install.sh
+```
 
 Run the script.
 
-`sudo ./install.sh`
+```bash
+sudo ./install.sh
+```
 
 ## Usage - Update Homepage
 Download `update.sh`.
 
-`wget -O update.sh https://github.com/jnbolsen/homepage-scripts/blob/main/update.sh`
+```bash
+wget -O update.sh https://github.com/jnbolsen/homepage-scripts/blob/main/update.sh
+```
 
 Make the scrip executable.
 
-`sudo chmod +x update.sh`
+```bash
+sudo chmod +x update.sh
+```
 
 Run the script.
 
-`sudo ./update.sh`
+```bash
+sudo ./update.sh
+```
 
 ## Configuration Directory Location
 
