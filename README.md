@@ -14,7 +14,7 @@ The following packages are installed:
 sudo apt install curl node.js npm
 ```
 
-`bash
+```bash
 sudo npm install -g pnpm
 ```
 
