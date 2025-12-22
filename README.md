@@ -1,7 +1,8 @@
 # Homepage install and update scripts
 These are scripts to easily install and update [Homepage](https://gethomepage.dev/installation/) from source.
 
-Right now these are set to be verbose but can be changed by removing `-x` from `#!/bin/bash -x`.
+> [!NOTE]
+> Right now these are set to be verbose but can be changed by removing `-x` from `#!/bin/bash -x`.
 
 ## Requirements
 The following packages are installed:
