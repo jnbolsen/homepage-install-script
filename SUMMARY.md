@@ -1,5 +1,8 @@
 # Summary
-This file provides a summary of what the script does. It also can provide guidance to an AI model when working with this script.
+This file provides a summary of what the script does.
+
+> [!TIP]
+> It can also provide guidance to an AI model when working with this script.
 
 ## Script purpose
 This script automates the installation or update of Homepage, a self-hosted startpage/dashboard for your server, by downloading the latest release from GitHub, building it, and setting it up with systemd.
