@@ -14,10 +14,6 @@ The following packages are installed:
 sudo apt install curl node.js npm
 ```
 
-```bash
-sudo npm install -g pnpm
-```
-
 ## Usage - Install Homepage
 Download `install.sh`.
 
