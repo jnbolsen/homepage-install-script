@@ -11,8 +11,8 @@ This repository contains a script that installs and updates Homepage from source
 - `LOCAL_IP`: Local IPv4 address of machine.
 - `RELEASE`: Latest release version, pulled from the Homepage Github repository.
 - `VERSION_FILE`: Location of version file, where current version installed is listed.
-- `INSTALLED_VERSION`: Installed version, pulled from `VERSION_FILE`.
-- `NEW_INSTALLATION`: True mean new installation, false means update existing installation.
+- `INSTALLED_VERSION`: Current version of Homepage, pulled from `VERSION_FILE`.
+- `NEW_INSTALLATION`: True = new installation, false = update existing installation.
 
 ## Directories
 - Installation directory: `/opt/homepage`
