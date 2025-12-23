@@ -19,38 +19,39 @@ This script automates the installation or update of Homepage, a self-hosted star
 - Location of version file: `/opt`
 
 ## Script summary
-1. Set Initial Variables
+1. Set initial variables
    - Define `APP`, `LOCAL_IP`, and fetch latest `RELEASE` from GitHub.
-2. Validation Checks
+2. Validation checks
    - Ensure `RELEASE` and `LOCAL_IP` are valid.
    - Check that script runs as root.
    - Confirm `curl` and `npm` are installed.
-3. Determine Installation Type
+3. Determine installation type
    - If `VERSION_FILE` does not exist → new installation.
    - If `VERSION_FILE` exists but doesn't match `RELEASE` → update.
    - If version matches → exit (no action needed).
-4. System Preparation
+4. System preparation
    - Update system packages.
    - Upgrade `pnpm` (install if missing).
-5. Download & Extract Source
+5. Download and extract source
    - Download latest release tarball using GitHub API.
    - Extract into `/tmp`.
-6. Copy Files to Install Location
+6. Copy files to install directory
    - Move extracted source to `/opt/homepage`.
 7. Cleanup
    - Remove temporary files in `/tmp`.
-8. New Installation Steps Only
-   - Copy skeleton config files from `src/skeleton` to `config/`.
-   - Create `.env` file with `HOMEPAGE_ALLOWED_HOSTS` variable, which adds `LOCAL_IP`:3000 and `APP`.`DOMAIN`:3000.
+8. New installation steps only
+   - Copy skeleton config files from `src/skeleton` to `/opt/APP/config`.
+   - Create `.env` file with `HOMEPAGE_ALLOWED_HOSTS` variable, which adds `LOCAL_IP:3000` and `APP.DOMAIN:3000`.
    - Set up systemd service file.
-9. Build & Install Dependencies
+9. Build & install dependencies
    - Run `pnpm install`.
    - Run `pnpm build`.
 10. Finalize
     - Write new version to `VERSION_FILE`.
-    - Reload systemd daemon.
     - For new installs:
-      - Enable and start the service.
+      - Reload systemd daemon.
+      - Enable the service.
+      - Start the service.
     - For updates:
       - Restart the service only.
 
