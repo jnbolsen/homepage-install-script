@@ -1,5 +1,5 @@
 # Homepage install and update script
-This script installs [Homepage](https://gethomepage.dev/installation/source/) from source, or updates from source if it is already installed and a newer version is available. See [`AI_PROMPT.md`](https://github.com/jnbolsen/homepage-install-script/blob/main/AI_PROMPT.md) for more detail on what the script does.
+This script installs [Homepage](https://gethomepage.dev/) from source, or updates from source if it is already installed and a newer version is available. See [`AI_PROMPT.md`](https://github.com/jnbolsen/homepage-install-script/blob/main/AI_PROMPT.md) for more detail on what the script does.
 
 > [!NOTE]
 > The script installs dependencies and builds using pnpm [as recommended](https://gethomepage.dev/installation/source/). The latest verison is installed globally using npm.
@@ -27,7 +27,7 @@ wget -O install.sh https://raw.githubusercontent.com/jnbolsen/homepage-scripts/r
 > This script by default adds `localhost` and the IP address of the host to `HOMEPAGE_ALLOWED_HOSTS`. If an internal domain is configured on the host, this script will also automatically pull it using `hostname -d` and add it to `HOMEPAGE_ALLOWED_HOSTS`. Otherwise, the `DOMAIN` variable can be edited manually, or left alone if you do not have one.
 
 > [!TIP]
-> If you are using Proxmox VE and an internal domain is configured, then it is added automatically in LXCs.
+> If you are using Proxmox VE and an internal domain is configured, then it is added automatically to `hostname` in LXCs.
 
 Make the scrip executable.
 
