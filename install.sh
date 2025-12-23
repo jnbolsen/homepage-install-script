@@ -18,14 +18,14 @@ msg_error() { echo -e "${RED}ERROR:${NC} $1" >&2; }
 # Variables
 APP=$(hostname)
 LOCAL_IP=$(hostname -I | awk '{print $1}')
+DOMAIN=$(hostname -d 2>/dev/null || echo "")
 RELEASE=$(curl -fsSL "https://api.github.com/repos/gethomepage/homepage/releases/latest" | grep -o '"tag_name": "[^"]*"' | cut -d'"' -f4 | sed 's/^v//')
 VERSION_FILE="/opt/${APP}_version.txt"
-DOMAIN=$(hostname -d 2>/dev/null || echo "")
 
 # Validate
 [ -z $APP ] && msg_error "Could not fetch hostname." && exit 1
-[ -z $RELEASE ] && msg_error "Could not fetch release version." && exit 1
 [ -z $LOCAL_IP ] && msg_error "Could not determine local IP address." && exit 1
+[ -z $RELEASE ] && msg_error "Could not fetch release version." && exit 1
 
 # Check if already installed
 if [ -f $VERSION_FILE ]; then
@@ -35,11 +35,11 @@ if [ -f $VERSION_FILE ]; then
         exit 0
     fi
     NEW_INSTALLATION=false
-    msg_ok "A new version of Homepage is available (v$INSTALLED_VERSION)..."
+    msg_ok "Homepage v$INSTALLED_VERSION is currently installed and v$RELEASE is available. Updating..."
     systemctl stop homepage
 else
     NEW_INSTALLATION=true
-    msg_ok "New installation detected..."
+    msg_ok "No Homepage installation detected. Installing..."
 fi
 
 # Update system and install pnpm
