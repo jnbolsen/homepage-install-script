@@ -13,7 +13,7 @@ This script automates the installation or update of Homepage, a self-hosted star
 - `INSTALLED_VERSION`: Current version (if installed), read from `VERSION_FILE`
 - `NEW_INSTALLATION`: Boolean flag indicating if this is a new install
 
-## Directories
+## Directories used
 - Installation: `/opt/homepage`
 - Working (cleaned after installation): `/tmp`
 - Configuration: `/opt/homepage/config`
