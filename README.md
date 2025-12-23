@@ -1,5 +1,5 @@
 # Homepage install and update script
-This script installs [Homepage](https://gethomepage.dev/installation/) from source or updates it if already installed and a newer version is available.
+This script installs [Homepage](https://gethomepage.dev/installation/) from source, or updates from source if it is already installed and a newer version is available.
 
 > [!NOTE]
 > The script installs dependencies and builds using pnpm [as recommended](https://gethomepage.dev/installation/source/). The latest verison is installed globally using npm.
@@ -14,7 +14,7 @@ The following packages are installed:
 sudo apt install curl node.js npm
 ```
 
-## Usage - Install Homepage
+## Usage
 Download `install.sh`.
 
 ```bash
