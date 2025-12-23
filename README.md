@@ -33,16 +33,16 @@ Run the script.
 sudo ./install.sh
 ```
 
-## Configuration directory location
-
-`/opt/homepage/config/`
+## Directories
+- Installation directory: `/opt/homepage`
+- Configuration directory: `/opt/homepage/config`
 
 ## Tested environments
 Ubuntu 22.04, 24.04, and 25.10 <br />
 Debian 12 and 13
 
 ## Reference
-These scripts are similar to the LXC Homepage scripts from [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/scripts?id=homepage), but tailored for my personal use and used within the server instead of Proxmox.
+Some ideas for this script came from the LXC Homepage scripts from [PVE community-scripts](https://community-scripts.github.io/ProxmoxVE/scripts?id=homepage), but tailored for my personal use and used within the server instead of PVE.
 
 ## License
 
