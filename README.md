@@ -1,4 +1,4 @@
-# Homepage install and update script
+# Homepage install script
 This script installs [Homepage](https://gethomepage.dev/) from source, or updates from source if it is already installed and a newer version is available. See [`AI_PROMPT.md`](https://github.com/jnbolsen/homepage-install-script/blob/main/AI_PROMPT.md) for more detail on what the script does.
 
 > [!NOTE]
